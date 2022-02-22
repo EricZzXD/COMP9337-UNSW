@@ -1,0 +1,7 @@
+1. No module named Crypto.Cipher even after installing the crypto module (specially in windows)
+
+You may have to follow the following steps.
+	pip uninstall crypto
+	pip uninstall pycryptodome
+	pip install pycryptodome
+
