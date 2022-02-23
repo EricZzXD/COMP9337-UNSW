@@ -10,7 +10,7 @@ import time
 # Read file and check whether the CBC block
 def readfile(path):
     CBC_block = 8
-    CBC_Padding = "\x00"
+    CBC_Padding = "\0"
     f = open(path, mode='r', encoding="latin-1").read()
 
     # Detect if Need to do padding
@@ -38,12 +38,11 @@ def decrypt_DES(iv, key, cipher_text):
 
 
 if __name__ == '__main__':
-    iv, key, inputfile, outputfile= binascii.unhexlify(sys.argv[1]), binascii.unhexlify(sys.argv[2]), sys.argv[3], sys.argv[4]
+    # iv, key, inputfile, outputfile= binascii.unhexlify(sys.argv[1]), binascii.unhexlify(sys.argv[2]), sys.argv[3], sys.argv[4]
 
-    # iv = binascii.unhexlify("fedcba9876543210")
-    # key = binascii.unhexlify("40fedf386da13d57")
-    # inputfile = "test2.txt"
-    # outputfile = "output.des"
+    iv = binascii.unhexlify("fedcba9876543210")
+    key = binascii.unhexlify("40fedf386da13d57")
+    inputfile = "test2.txt"
     CompareFile = "test2.des"
 
     print("=" * 100)
@@ -56,21 +55,17 @@ if __name__ == '__main__':
     Cipher_Text = encrypt_DES(iv, key, file_Value)
     Encryption_Time = time.time() - Estart_Time
 
-    # Write File and encoding="latin-1"
-    with open(outputfile, 'w', encoding="latin-1") as f:
-        f.write(Cipher_Text.decode("latin-1"))
-
     # Decryption
     Dstart_Time = time.time()
     DesCipher_Text = decrypt_DES(iv, key, Cipher_Text)
     Decryption_Time = time.time() - Dstart_Time
 
-    # Print Value
-    print("=" * 100)
-    print("Encryption Time Used: ", Encryption_Time)
-    print("Decryption Time Used: ", Decryption_Time)
-
-    # if read_file(CompareFile) == Cipher_Text.decode("latin-1"):
+    # print("Provided Answer:")
+    # print(readfile(CompareFile).encode("latin-1"))
+    # print("=" * 100)
+    # print("Encrypted")
+    # print(Cipher_Text)
+    # if readfile(CompareFile).encode("latin-1") == Cipher_Text:
     #     print("Match")
     # else:
     #     print("Error")

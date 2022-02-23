@@ -1,0 +1,6 @@
+One of the most important features of this book is the use of Sage for cryptographic examples
+and homework assignments. Sage is an open-source, multiplatform, freeware package that
+implements a very powerful, flexible, and easily learned mathematics and computer algebra
+system. Unlike competing systems (such as Mathematica, Maple, and MATLAB), there are
+no licensing agreements or fees involved. Thus, Sage can be made available on computers and
+networks at school, and students can individually download the s

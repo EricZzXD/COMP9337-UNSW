@@ -38,37 +38,37 @@ def decrypt_DES(iv, key, cipher_text):
 
 
 if __name__ == '__main__':
-    # iv, key, inputfile, outputfile= binascii.unhexlify(sys.argv[1]), binascii.unhexlify(sys.argv[2]), sys.argv[3], sys.argv[4]
+    # Pre define for Testing purpose
+    # iv = binascii.unhexlify("fedcba9876543210")
+    # key = binascii.unhexlify("40fedf386da13d57")
+    # inputfile = "test2.txt"
+    # outputfile = "output.des"
 
-    iv = binascii.unhexlify("fedcba9876543210")
-    key = binascii.unhexlify("40fedf386da13d57")
-    inputfile = "test2.txt"
-    outputfile = "output.des"
-    CompareFile = "test2.des"
+    iv, key, inputfile, outputfile= binascii.unhexlify(sys.argv[1]), binascii.unhexlify(sys.argv[2]), sys.argv[3], sys.argv[4]
 
     # Read File & encoding before encryption so that only record the Encryption time
     file_Value = readfile(inputfile).encode("latin-1")
 
     # Encryption
-    Estart_Time = time.time()
+    E_start_Time = time.time()
     Cipher_Text = encrypt_DES(iv, key, file_Value)
-    Encryption_Time = time.time() - Estart_Time
+    Encryption_Time = time.time() - E_start_Time
 
     # Write File and encoding="latin-1"
     with open(outputfile, 'w', encoding="latin-1") as f:
         f.write(Cipher_Text.decode("latin-1"))
 
     # Decryption
-    Dstart_Time = time.time()
+    D_start_Time = time.time()
     DesCipher_Text = decrypt_DES(iv, key, Cipher_Text)
-    Decryption_Time = time.time() - Dstart_Time
+    Decryption_Time = time.time() - D_start_Time
 
     # Print Value
     print("=" * 100)
+    print("Encryption: ", "DES CBC")
+    print("Input file Name: ", inputfile)
+    print("Input file Length: ", len(readfile(inputfile)))
     print("Encryption Time Used: ", Encryption_Time)
     print("Decryption Time Used: ", Decryption_Time)
+    print('\n')
 
-    # if read_file(CompareFile) == Cipher_Text.decode("latin-1"):
-    #     print("Match")
-    # else:
-    #     print("Error")

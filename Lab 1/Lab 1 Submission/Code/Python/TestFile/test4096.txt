@@ -1,0 +1,55 @@
+Data Confidentiality
+Confidentiality is the protection of transmitted data from passive attacks. With
+respect to the content of a data transmission, several levels of protection can be
+identified. The broadest service protects all user data transmitted between two
+users over a period of time. For example, when a TCP connection is set up between
+two systems, this broad protection prevents the release of any user data transmitted
+over the TCP connection. Narrower forms of this service can also be defined,
+including the protection of a single message or even specific fields within a message.
+These refinements are less useful than the broad approach and may even be more
+complex and expensive to implement.
+The other aspect of confidentiality is the protection of traffic flow from analysis.
+This requires that an attacker not be able to observe the source and destination, frequency,
+length, or other characteristics of the traffic on a communications facility.
+Data Integrity
+As with confidentiality, integrity can apply to a stream of messages, a single message,
+or selected fields within a message. Again, the most useful and straightforward
+approach is total stream protection.
+A connection-oriented integrity service, one that deals with a stream of messages,
+assures that messages are received as sent with no duplication, insertion,
+modification, reordering, or replays. The destruction of data is also covered under
+this service. Thus, the connection-oriented integrity service addresses both message
+stream modification and denial of service. On the other hand, a connectionless integrity
+service, one that deals with individual messages without regard to any larger
+context, generally provides protection against message modification only.
+We can make a distinction between service with and without recovery.
+Because the integrity service relates to active attacks, we are concerned with detection
+rather than prevention. If a violation of integrity is detected, then the service
+may simply report this violation, and some other portion of software or human
+intervention is required to recover from the violation. Alternatively, there are
+mechanisms available to recover from the loss of integrity of data, as we will review
+subsequently. The incorporation of automated recovery mechanisms is, in general,
+the more attractive alternative.
+Nonrepudiation
+Nonrepudiation prevents either sender or receiver from denying a transmitted message.
+Thus, when a message is sent, the receiver can prove that the alleged sender in
+fact sent the message. Similarly, when a message is received, the sender can prove
+that the alleged receiver in fact received the message.
+Availability Service
+Both X.800 and RFC 4949 define availability to be the property of a system or a
+system resource being accessible and usable upon demand by an authorized system
+entity, according to performance specifications for the system (i.e., a system is available
+if it provides services according to the system design whenever users requestthem). A variety of attacks can result in the loss of or reduction in availability. Some
+of these attacks are amenable to automated countermeasures, such as authentication
+and encryption, whereas others require some sort of physical action to prevent
+or recover from loss of availability of elements of a distributed system.
+X.800 treats availability as a property to be associated with various security
+services. However, it makes sense to call out specifically an availability service. An
+availability service is one that protects a system to ensure its availability. This service
+addresses the security concerns raised by denial-of-service attacks. It depends
+on proper management and control of system resources and thus depends on access
+control service and other security services.
+Table 1.3 lists the security mechanisms defined in X.800. The mechanisms are
+divided into those that are implemented in a specific protocol layer, such as TCP
+or an application-layer protocol, and those that are not specific to any particular
+protocol layer or security service. These
