@@ -15,8 +15,7 @@ if __name__ == '__main__':
     digest_maker = hmac.new("This is a secret key".encode("latin-1"), digestmod=hashlib.md5)
 
     # Read File
-    # inputfile = sys.argv[1]
-    inputfile = "test.txt"
+    inputfile = sys.argv[1]
     f = readfile(inputfile)
 
     try:
