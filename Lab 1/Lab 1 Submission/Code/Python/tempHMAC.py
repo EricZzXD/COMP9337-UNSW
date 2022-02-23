@@ -1,36 +1,37 @@
-#Following code reads its source file and computes an HMAC signature for it:
+import hashlib
 import hmac
 import binascii
+import random
+
 from Crypto import Random
 import time
 import sys
 
 def readfile(path):
-    f = open(path, mode='rb', encoding="latin-1")
+    f = open(path, mode='rb')
     return f
 
 
 if __name__ == '__main__':
 
-    # Security Key
-    secret_key = binascii.unhexlify("40fedf386da13d57")
-    digest_maker = hmac.new(secret_key)
+    # Generate a key for HMAC
+    digest_maker = hmac.new("This is a secret key".encode("latin-1"), digestmod=hashlib.md5)
 
     # Read File
     # inputfile = sys.argv[1]
-    inputfile = "TestFile/test4096.txt"
-
+    inputfile = "test.txt"
     f = readfile(inputfile)
 
     try:
         while True:
-            block = f.read(1024)
+            block = f.read()
             if not block:
                 break
             digest_maker.update(block)
     finally:
         f.close()
 
+    # Record the performance of the HMAC
     startTime = time.time()
     digest = digest_maker.hexdigest()
     UsedTime = time.time() - startTime
@@ -41,5 +42,5 @@ if __name__ == '__main__':
     print("Input file Name: ", inputfile)
     print("Input file Length: ", len(readfile(inputfile).read()))
     print("Encryption Time Used: ", UsedTime)
-    print("HMAC digest generated for \"lorem.txt\" file is:", digest)
+    print("HMAC digest generated: ", digest)
     print('\n')
