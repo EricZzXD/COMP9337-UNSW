@@ -12,19 +12,23 @@ fileArrayRSA = ["TestFile/testRSA2.txt", "TestFile/testRSA4.txt", "TestFile/test
 
 
 # Run code to test
-# DES Function
+# DES Algorithm
 for i in fileArray:
     os.system("python tempdes.py " + iv + " " + key + " " + i + " output.des")
 
-# AES Function
+# RSA Algorithm
 for i in fileArray:
     os.system("python tempaes.py " + i)
 
-# SHA1 Function
+# AES Algorithm
+for i in fileArrayRSA:
+    os.system("python temprsa.py " + i)
+
+# SHA1 Algorithm
 for i in fileArray:
     os.system("python tempsha1.py " + i)
 
-# HMAC Function
+# HMAC Algorithm
 for i in fileArray:
     os.system("python tempHMAC.py " + i)
 

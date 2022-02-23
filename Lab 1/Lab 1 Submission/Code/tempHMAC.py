@@ -1,11 +1,8 @@
 import hashlib
 import hmac
-import binascii
-import random
-
-from Crypto import Random
 import time
 import sys
+
 
 def readfile(path):
     f = open(path, mode='rb')
