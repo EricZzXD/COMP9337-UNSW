@@ -33,7 +33,7 @@ if __name__ == '__main__':
     # Start Decryption
     Decry_Start = time.time()
     decrypted = decryptor.decrypt(ast.literal_eval(str(encrypted)))
-    Decry_Used = time.time()
+    Decry_Used = time.time() - Decry_Start
 
     # Print Value
     print("=" * 100)
