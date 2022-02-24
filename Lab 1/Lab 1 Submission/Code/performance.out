@@ -1,0 +1,272 @@
+====================================================================================================
+Encryption:  DES CBC
+Input file Name:  TestFile/test16.txt
+Input file Length:  16
+Encryption Time Used:  2.3365020751953125e-05
+Decryption Time Used:  1.6927719116210938e-05
+
+
+====================================================================================================
+Encryption:  DES CBC
+Input file Name:  TestFile/test64.txt
+Input file Length:  64
+Encryption Time Used:  2.4318695068359375e-05
+Decryption Time Used:  1.8835067749023438e-05
+
+
+====================================================================================================
+Encryption:  DES CBC
+Input file Name:  TestFile/test512.txt
+Input file Length:  512
+Encryption Time Used:  3.814697265625e-05
+Decryption Time Used:  2.3365020751953125e-05
+
+
+====================================================================================================
+Encryption:  DES CBC
+Input file Name:  TestFile/test4096.txt
+Input file Length:  4096
+Encryption Time Used:  8.058547973632812e-05
+Decryption Time Used:  9.560585021972656e-05
+
+
+====================================================================================================
+Encryption:  DES CBC
+Input file Name:  TestFile/test32768.txt
+Input file Length:  32768
+Encryption Time Used:  0.0004696846008300781
+Decryption Time Used:  0.0003616809844970703
+
+
+====================================================================================================
+Encryption:  DES CBC
+Input file Name:  TestFile/test262144.txt
+Input file Length:  262144
+Encryption Time Used:  0.003314971923828125
+Decryption Time Used:  0.0029087066650390625
+
+
+====================================================================================================
+Encryption:  DES CBC
+Input file Name:  TestFile/test2047152.txt
+Input file Length:  2047152
+Encryption Time Used:  0.02500748634338379
+Decryption Time Used:  0.022395610809326172
+
+
+====================================================================================================
+Encryption:  AES CBC
+Input file Name:  TestFile/test16.txt
+Input file Length:  16
+Encryption Time Used:  7.3909759521484375e-06
+Decryption Time Used:  4.291534423828125e-06
+
+
+====================================================================================================
+Encryption:  AES CBC
+Input file Name:  TestFile/test64.txt
+Input file Length:  64
+Encryption Time Used:  7.3909759521484375e-06
+Decryption Time Used:  5.4836273193359375e-06
+
+
+====================================================================================================
+Encryption:  AES CBC
+Input file Name:  TestFile/test512.txt
+Input file Length:  512
+Encryption Time Used:  9.775161743164062e-06
+Decryption Time Used:  6.9141387939453125e-06
+
+
+====================================================================================================
+Encryption:  AES CBC
+Input file Name:  TestFile/test4096.txt
+Input file Length:  4096
+Encryption Time Used:  2.574920654296875e-05
+Decryption Time Used:  2.4080276489257812e-05
+
+
+====================================================================================================
+Encryption:  AES CBC
+Input file Name:  TestFile/test32768.txt
+Input file Length:  32768
+Encryption Time Used:  0.00015306472778320312
+Decryption Time Used:  0.0001537799835205078
+
+
+====================================================================================================
+Encryption:  AES CBC
+Input file Name:  TestFile/test262144.txt
+Input file Length:  262144
+Encryption Time Used:  0.001386404037475586
+Decryption Time Used:  0.0012731552124023438
+
+
+====================================================================================================
+Encryption:  AES CBC
+Input file Name:  TestFile/test2047152.txt
+Input file Length:  2047152
+Encryption Time Used:  0.009899616241455078
+Decryption Time Used:  0.01010584831237793
+
+
+====================================================================================================
+Encryption:  RSA
+Input file Name:  TestFile/testRSA2.txt
+Input file Length:  2
+Encryption Time Used:  0.00025916099548339844
+Decryption Time Used:  0.0005605220794677734
+
+
+====================================================================================================
+Encryption:  RSA
+Input file Name:  TestFile/testRSA4.txt
+Input file Length:  4
+Encryption Time Used:  0.00025963783264160156
+Decryption Time Used:  0.0005540847778320312
+
+
+====================================================================================================
+Encryption:  RSA
+Input file Name:  TestFile/testRSA8.txt
+Input file Length:  8
+Encryption Time Used:  0.0002608299255371094
+Decryption Time Used:  0.0005316734313964844
+
+
+====================================================================================================
+Encryption:  RSA
+Input file Name:  TestFile/testRSA16.txt
+Input file Length:  16
+Encryption Time Used:  0.0003204345703125
+Decryption Time Used:  0.0005218982696533203
+
+
+====================================================================================================
+Encryption:  RSA
+Input file Name:  TestFile/testRSA32.txt
+Input file Length:  32
+Encryption Time Used:  0.0003139972686767578
+Decryption Time Used:  0.0005249977111816406
+
+
+====================================================================================================
+Encryption:  RSA
+Input file Name:  TestFile/testRSA64.txt
+Input file Length:  64
+Encryption Time Used:  0.0002758502960205078
+Decryption Time Used:  0.0005512237548828125
+
+
+====================================================================================================
+Encryption:  SHA1
+Input file Name:  TestFile/test16.txt
+Input file Length:  16
+Encryption Time Used:  2.384185791015625e-06
+Encryption Result:  bf185e47d965330e96380820c9d083cac75666ba
+
+
+====================================================================================================
+Encryption:  SHA1
+Input file Name:  TestFile/test64.txt
+Input file Length:  64
+Encryption Time Used:  5.245208740234375e-06
+Encryption Result:  788687e06a8ee79463a03e7bf2e4806b983a9549
+
+
+====================================================================================================
+Encryption:  SHA1
+Input file Name:  TestFile/test512.txt
+Input file Length:  512
+Encryption Time Used:  3.0994415283203125e-06
+Encryption Result:  f73a873ccdc696526850c10c2da0cbaf19beb328
+
+
+====================================================================================================
+Encryption:  SHA1
+Input file Name:  TestFile/test4096.txt
+Input file Length:  4096
+Encryption Time Used:  7.867813110351562e-06
+Encryption Result:  1536b498498258cac7a9b9c53ec7bdd253a32596
+
+
+====================================================================================================
+Encryption:  SHA1
+Input file Name:  TestFile/test32768.txt
+Input file Length:  32768
+Encryption Time Used:  4.0531158447265625e-05
+Encryption Result:  4f574c6a6b1cbf343d73c2928319e3bcca29c151
+
+
+====================================================================================================
+Encryption:  SHA1
+Input file Name:  TestFile/test262144.txt
+Input file Length:  262144
+Encryption Time Used:  0.00032258033752441406
+Encryption Result:  8ad77220526468115ed7fedea1de83fbc40ea716
+
+
+====================================================================================================
+Encryption:  SHA1
+Input file Name:  TestFile/test2047152.txt
+Input file Length:  2047152
+Encryption Time Used:  0.001483917236328125
+Encryption Result:  741d27ce9521ce71b51d976b8786c14c81f18b7c
+
+
+====================================================================================================
+Encryption:  HMAC
+Input file Name:  TestFile/test16.txt
+Input file Length:  16
+Encryption Time Used:  3.814697265625e-06
+HMAC digest generated:  bac292dfda95697167f1ca1de3927d04
+
+
+====================================================================================================
+Encryption:  HMAC
+Input file Name:  TestFile/test64.txt
+Input file Length:  64
+Encryption Time Used:  4.0531158447265625e-06
+HMAC digest generated:  8146dd930f08c409974b6797c9b81ee2
+
+
+====================================================================================================
+Encryption:  HMAC
+Input file Name:  TestFile/test512.txt
+Input file Length:  512
+Encryption Time Used:  3.814697265625e-06
+HMAC digest generated:  452528f9ae533c7638fd34c282db88da
+
+
+====================================================================================================
+Encryption:  HMAC
+Input file Name:  TestFile/test4096.txt
+Input file Length:  4096
+Encryption Time Used:  4.0531158447265625e-06
+HMAC digest generated:  84978d2284bdad0bddeb1f05ec20ab54
+
+
+====================================================================================================
+Encryption:  HMAC
+Input file Name:  TestFile/test32768.txt
+Input file Length:  32768
+Encryption Time Used:  4.0531158447265625e-06
+HMAC digest generated:  c4ac46a00a46dba024926e021b9fc050
+
+
+====================================================================================================
+Encryption:  HMAC
+Input file Name:  TestFile/test262144.txt
+Input file Length:  262144
+Encryption Time Used:  5.9604644775390625e-06
+HMAC digest generated:  d15e7172987bcd4604a829ab693b7aab
+
+
+====================================================================================================
+Encryption:  HMAC
+Input file Name:  TestFile/test2047152.txt
+Input file Length:  2047152
+Encryption Time Used:  5.7220458984375e-06
+HMAC digest generated:  60fd081c1d0c735a6b4137c05a97f525
+
+
